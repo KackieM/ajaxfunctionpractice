@@ -39,7 +39,30 @@
                     </ul>
                 </nav>
             </div><!--end container-->
-        </header><!--end header-->
+        </header>
+
+    <table id="postform"><tr><th align="center">
+        <form id='add'>
+            <h2>Post a Review</h2>
+        </th></tr>
+        <tr>
+            <td><label for="title">Review:</label></td><td><input name="review" id="review" type="textbox"/></td>
+        </tr>
+        <tr>
+            <td><label for="body">Body</label></td><td><textarea name="reviewComment" rows="10" cols="30"></textarea></td>
+        </tr>
+        <tr><td></td><td><input name="submit" type="submit" value="Add"></td></tr>
+    </form>
+</table>
+
+
+<div id="error"></div>
+<div id="success"></div>
+<div id="postwrap"></div>
+
+
+
+        <!--end header-->
 
          <!-- <div class="reviewPage"> -->
             <!-- <div class="container previews"> -->
@@ -142,8 +165,7 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
             <!-- // <script src="scripts/main.js"></script> -->
             <!-- // <script src="scripts/search.js"></script> -->
-            <script src="scripts/reviews.js"></script>
-            <script src="scripts/footer.js"></script>
+            
         <!-- endbuild -->
 </body>
 </html>
