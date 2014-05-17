@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>Kackie Exploring</title>
+        <title>My Blog, yo</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
@@ -20,62 +20,67 @@
         </script>
     </head>
     <body>
-      <header>  
-        <div class="container">
-          <h3>The Exploratory Committee</h3>
-            <nav class="pull-right">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="searching.html">Searches</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
-        </div><!--end nav container-->
-      </header><!--end header-->
-        <div class="reviewPage">
-          <div class="row">
-            <div class="col-lg-8">
-              <div class="content mainContent">
-                <button class="pull-right btn btn-warning">See Review Data</button>
-                <section>
-                    <!-- Park Reviews Will Go Here-->
-                </section>
-              </div>
+
+
+        <div class="container pageContent">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li class="active"><a href="#">Blog Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <h3 class="text-muted">The Iron Yard</h3>
             </div>
+            <div class="row">
+            <div class="col-lg-8">
+                <div class="content mainContent">
+                    <button class="pull-right btn btn-warning">New Post</button>
+                <section>
+                    <!-- posts go here -->
+
+                </section>
+            </div>
+            </div>
+            
             <div class="col-lg-4">
-              <div class="content">
+               <div class="content">
                 <h3>Recent Posts</h3>
                 <ul class="recentPosts">
-                    <!-- Most Recent Explorer Reviews-->
+                    <!-- recent posts go here -->
                 </ul>
-              </div>
+                </div>
+
             </div>
-          </div>
+
+            </div>
+    <div class="footer">
+        <p><span class="glyphicon glyphicon-heart"></span> You for you about you, love you!</p>
+    </div>
 
             <!-- stuff that you can't see initially -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 class="modal-title" id="myModalLabel">New Exlorer Reviews</h4>
-            </div>
-            <form id="newReviewForm" action="">
-              <div class="modal-body">
-                <div class="form-group">
-                  <label for="newReviewTitle">Give Us A Review!</label>
-                    <input type="text" class="form-control newPostTitle" id="newPostTitle" placeholder="Title">
-                </div>
-                <div class="form-group">
-                  <label for="reviewerPost"></label>
-                    <input type="text" class="form-control authorPostForm" id="authorPostForm" placeholder="Author">
-            </div>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">New Blog Post</h4>
+      </div>
+      <form id="newPostForm" action="">
+      <div class="modal-body">
+        
             <div class="form-group">
-              <label for="postContentForm">Post</label>
+                <label for="newPostTitle">Title of New Post</label>
+                <input type="text" class="form-control newPostTitle" id="newPostTitle" placeholder="Title">
+              </div>
+              <div class="form-group">
+                <label for="authorPost">Author of Post</label>
+                <input type="text" class="form-control authorPostForm" id="authorPostForm" placeholder="Author">
+              </div>
+              <div class="form-group">
+                <label for="postContentForm">Post</label>
                 <textarea id="postContentForm" class="form-control postContentForm"></textarea>
                 <p class="help-block">Example block-level help text here.</p>
-            </div>
+              </div>
         
       </div>
       <div class="modal-footer">
@@ -93,7 +98,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Edit Explorer Review</h4>
+        <h4 class="modal-title" id="myModalLabel">Edit Blog Post</h4>
       </div>
       <form id="editPostForm" action="">
      <!-- template renders for this -->
